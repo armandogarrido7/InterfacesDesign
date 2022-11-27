@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/css.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <aside>
+        <a href=""><img src="./img/linkedin.svg" alt="linkedin" /></a>
+        <a href=""><img src="./img/github_black.svg" alt="github" id="github" /></a>
+        <a href=""><img src="./img/instagram.svg" alt="instagram" /></a>
+        <a href=""><img src="./img/twitter.svg" alt="twitter" /></a>
+    </aside>
+    <main>
+        <header>
+            <div id="nav_btn">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about_me">About me</a>
+                <a href="#works">My works</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#testimonies">Testimonies</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div id="toggle_theme" class="light">
+                <img src="./img/moon2.png" id="dark" />
+                <img src="./img/sun.png" id="light" />
+            </div>
+        </header>
+        <div id="home">
+            <h1>Hello, I am Armando Garrido</h1>
+            <p>Fullstack Web Developer</p>
+        </div>
+        <section id="about_me">
+            <h2>About me</h2>
+            <div>
+                <img src="./img/about_me.svg" alt="about_me" />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit soluta sapiente ullam vel ad, beatae temporibus asperiores repellendus iure, in fugiat nisi distinctio quibusdam? Dicta in deserunt nam omnis officia explicabo sequi rerum, obcaecati
+                    adipisci inventore voluptatem natus! Tempore et doloremque reiciendis suscipit nam nobis, molestiae fugiat, facere eaque saepe nulla rem quaerat impedit recusandae, eligendi commodi. Asperiores consectetur facere quaerat a officiis
+                    eum blanditiis, tempore perspiciatis ducimus doloremque eaque fuga natus, libero impedit dicta. Praesentium, sapiente consequatur hic rerum, dolor tempora quos ipsum culpa voluptas eius provident mollitia est officiis similique ea
+                    perferendis repellat accusamus obcaecati deleniti eaque optio quasi totam dicta? Modi dolore dignissimos incidunt delectus reiciendis eaque suscipit tempora quidem ratione atque porro exercitationem quisquam vero eum aspernatur voluptas
+                    optio dolor iure illum itaque, quas ducimus. Fuga beatae nisi ad dicta ipsa ex earum eveniet fugiat, vel quo pariatur ea iste velit aspernatur laboriosam quod. In, fuga? Numquam ab illum error, inventore, a esse quis recusandae rem
+                    excepturi officia quibusdam mollitia facilis harum nulla, dolore quidem vitae cum minus voluptatibus animi enim itaque. Similique corporis, repellat unde omnis nam aliquid voluptas ad amet nulla quos magni rerum placeat quam, dicta
+                    asperiores dolore quasi dolorum iure neque! Quas?
+                </p>
+            </div>
+        </section>
+        <section id="works">
+            <h2>My works</h2>
+            <div id="cards">
+                <div id="card">
+                    <div class="img_text">JavaScript Pairs Game</div>
+                    <img src="./img/js_pairs_game.png" alt="js_pairs_game" />
+                </div>
+                <div id="card">
+                    <div class="img_text">Guessing Game</div>
+                    <img src="./img/guessing_game.png" alt="guessing_game" />
+                </div>
+                <div id="card">
+                    <div class="img_text">Hangman Game</div>
+                    <img src="./img/hangman_game.png" alt="hangman_game" />
+                </div>
+                <div id="card">
+                    <div class="img_text">Music Search with Spotify API</div>
+                    <img src="./img/music_search_spotify.png" alt="music_search_spotify" />
+                </div>
+                <div id="card">
+                    <div class="img_text">Ping Pong Game</div>
+                    <img src="./img/ping_pong_game.png" alt="ping_pong_game" />
+                </div>
+                <div id="card">
+                    <div class="img_text">JavaScript Pairs Game</div>
+                    <img src="./img/js_pairs_game.png" alt="js_pairs_game" />
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="flex_row">
+                <div id="frontend">
+                    <h3>Frontend</h3>
+                    <div class="flex_column">
+                        <h4>Languages</h4>
+                        <div class="skill">
+                            <img src="./img/js.svg" alt="js">
+                            <div class="progress_bar">
+                                <div id="js" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/html.svg" alt="html">
+                            <div class="progress_bar">
+                                <div id="html" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/css.svg" alt="css">
+                            <div class="progress_bar">
+                                <div id="css" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <h4>Frameworks</h4>
+                        <div class="skill">
+                            <img src="./img/react.svg" alt="react">
+                            <div class="progress_bar">
+                                <div id="react" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/vue.svg" alt="vue">
+                            <div class="progress_bar">
+                                <div id="vue" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/bootstrap.svg" alt="bootstrap">
+                            <div class="progress_bar">
+                                <div id="bootstrap" class="skill_div"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="backend">
+                    <h3>Backend</h3>
+                    <div class="flex_column">
+                        <h4>Languages</h4>
+                        <div class="skill">
+                            <img src="./img/php.svg" alt="php">
+                            <div class="progress_bar">
+                                <div id="php" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/python.svg" alt="python">
+                            <div class="progress_bar">
+                                <div id="python" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/mysql.svg" alt="mysql">
+                            <div class="progress_bar">
+                                <div id="mysql" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <h4>Frameworks</h4>
+                        <div class="skill">
+                            <img src="./img/laravel.svg" alt="laravel">
+                            <div class="progress_bar">
+                                <div id="laravel" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/django.svg" alt="django">
+                            <div class="progress_bar">
+                                <div id="django" class="skill_div"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <img src="./img/node_js.svg" alt="node_js">
+                            <div class="progress_bar">
+                                <div id="node_js" class="skill_div"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+        </section>
+        <section id="testimonies">
+            <h2>Testimonies</h2>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="index.html">
+                <label>Name<input type="text"></label>
+                <label>Email<input type="email"></label>
+                <label>Subject<input type="text" name="subject"></label>
+                <label>Message <textarea></textarea></label>
+                <div class="contact_div">
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+        <footer>Armando Garrido Rodríguez - 2022</footer>
+    </main>
+</body>
+
+</html>
