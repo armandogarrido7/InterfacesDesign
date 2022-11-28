@@ -19,8 +19,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     /* font-family: 'Patrick Hand', cursive; */
-    /* font-family: 'Quicksand', sans-serif; */
-    font-family: "Offside", cursive;
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: "Offside", cursive; */
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     /* background: rgb(28, 29, 190);
     background: linear-gradient(171deg, rgba(28, 29, 190, 0.8) 0%, rgba(19, 214, 183, 0.8046568969384629) 55%, rgba(0, 255, 42, 0.8) 100%);
@@ -157,7 +157,7 @@ section {
 .img_text {
     width: 100%;
     height: 50%;
-    font-size: 2vw;
+    font-size: 1.5rem;
     border-radius: 25px;
     font-weight: bolder;
     display: none;
@@ -191,7 +191,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 
@@ -212,8 +212,13 @@ h2 {
     color: var(--secondary-color);
 }
 
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 #home>p {
-    font-size: 1.5vw;
+    font-size: 1rem;
     margin-top: 2vh;
 }
 
@@ -269,7 +274,7 @@ h4 {
 
 .progress_bar {
     width: 20vw;
-    height: 3vh;
+    height: 2.5vh;
     border-radius: 20px;
     background-color: #FFFFFF;
 }
@@ -278,6 +283,8 @@ h4 {
     border-radius: 20px;
     height: 100%;
     background-color: var(--tertiary-color);
+    background: rgb(7, 1, 120);
+    background: linear-gradient(90deg, var(--tertiary-color) 0%, #2733b8 100%);
 }
 
 .progress_bar_js {
@@ -348,19 +355,6 @@ h4 {
     align-items: center;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 95%;
-    text-align: center;
-    font-weight: 700;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    margin: 0;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
 
 /*--------------------------------------*/
 
@@ -394,13 +388,22 @@ form>label {
     display: flex;
     flex-direction: row;
     width: 80%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .contact_div>input {
     padding: 1vh;
-    border: 1px solid black;
+    color: white;
+    border: 0;
+    background-color: var(--tertiary-color);
     border-radius: 15px;
+    font-family: 'Quicksand', sans-serif;
+    ;
+}
+
+.contact_div>input:hover {
+    transition: all 0.1s ease-in-out;
+    box-shadow: 3px 3px 3px var(--quartiary-color);
 }
 
 textarea {
@@ -421,8 +424,8 @@ textarea {
 #line3 {
     content: "";
     position: relative;
-    width: 4vh;
-    height: 0.75vh;
+    width: 70%;
+    height: 0.3rem;
     background-color: var(--primary-color);
     border-radius: 0.5vh;
 }
@@ -433,14 +436,14 @@ textarea {
 }
 
 .nav_btn_clicked>#line1 {
-    transform: translateY(0.45em) rotate(405deg);
+    transform: translateY(0.40rem) rotate(405deg);
     transition: all 0.75s;
     transform-origin: top;
     z-index: 10;
 }
 
 .nav_btn_clicked>#line3 {
-    transform: translateY(-0.45em) rotate(-405deg);
+    transform: translateY(-0.40rem) rotate(-405deg);
     transition: all 0.75s;
     transform-origin: bottom;
     z-index: 10;
@@ -581,10 +584,22 @@ textarea {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    aside {
+        width: 8%;
+    }
+    #main {
+        width: 92%;
+    }
+    #about_me>div {
+        flex-direction: column;
+    }
+    #about_me>div>img {
+        width: 100%;
+    }
     #nav_btn {
         position: absolute;
-        right: 0;
+        right: 2vw;
         top: 2vh;
         display: flex;
         flex-direction: column;
@@ -605,23 +620,29 @@ textarea {
         padding-top: 5vh;
     }
     .nav_open {
-        padding: 10vh 2vw;
-        padding-bottom: 2vw;
+        width: 50vw;
+        height: 100%;
+        padding: 10% 2vw;
         display: flex;
         flex-direction: column;
         position: absolute;
+        justify-content: space-evenly;
         right: 0;
         gap: 2vh;
         transition: all 0.75s;
         background-color: var(--secondary-color);
         color: var(--primary-color);
+        font-size: 1.5rem;
+    }
+    #home {
+        height: 100vh;
     }
     #toggle_theme {
         position: absolute;
         display: flex;
         flex-direction: column;
         top: 2vh;
-        left: -2vw;
+        left: 0%;
         height: auto;
     }
     #toggle_theme::after {
@@ -638,5 +659,21 @@ textarea {
         left: 0;
         top: 5%;
         transition: all 0.3s ease-in-out;
+    }
+    #cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        padding-bottom: 3vh;
+    }
+    #card {
+        width: 80%;
+    }
+    .progress_bar {
+        width: 20vw;
+        height: 1.5vh;
+        border-radius: 20px;
+        background-color: #FFFFFF;
     }
 }
